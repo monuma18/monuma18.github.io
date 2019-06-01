@@ -6,7 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+<title>Console Log GIPHY</title>
+</head>
+
 <body>
-  Dasani
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+
+        var queryURL ="https://api.giphy.com/v1/gifs/search?q=Avengers+Endgame&api_key=RpbF7yK9jdJvEIcxqxFvfqB36r3852SI&tag=dogs";
+
+$.ajax({url:queryURL,method:'GET'})
+.done(function(response){
+console.log(response);
+})
+    </script>
+</body>
+
+</html>
+
+</div>
 </body>
 </html>
